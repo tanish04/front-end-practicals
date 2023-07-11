@@ -1,0 +1,116 @@
+Q7
+1.
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiplication Table</title>
+  <script>
+    function printMultiplicationTable() {
+      var number = parseInt(document.getElementById("numberInput").value);
+      var table = "";
+
+      for (var i = 1; i <= 10; i++) {
+        var result = number * i;
+        table += number + " x " + i + " = " + result + "<br>";
+      }
+
+      document.getElementById("output").innerHTML = table;
+    }
+  </script>
+</head>
+<body>
+  <label for="numberInput">Enter a number:</label>
+  <input type="number" id="numberInput">
+  <button onclick="printMultiplicationTable()">Print Table</button>
+
+  <div id="output"></div>
+</body>
+</html>
+2.
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Largest Number</title>
+  <script>
+    function findLargestNumber() {
+      var num1 = parseInt(document.getElementById("num1Input").value);
+      var num2 = parseInt(document.getElementById("num2Input").value);
+      var num3 = parseInt(document.getElementById("num3Input").value);
+
+      var largest = Math.max(num1, num2, num3);
+
+      document.getElementById("output").innerHTML = "The largest number is: " + largest;
+    }
+  </script>
+</head>
+<body>
+  <label for="num1Input">Number 1:</label>
+  <input type="number" id="num1Input">
+  <br>
+  <label for="num2Input">Number 2:</label>
+  <input type="number" id="num2Input">
+  <br>
+  <label for="num3Input">Number 3:</label>
+  <input type="number" id="num3Input">
+  <br>
+  <butto…
+3.
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Factorial</title>
+  <script>
+    function calculateFactorial() {
+      var number = parseInt(document.getElementById("numberInput").value);
+      var factorial = 1;
+
+      for (var i = number; i >= 1; i--) {
+        factorial *= i;
+      }
+
+      document.getElementById("output").innerHTML = "The factorial of " + number + " is: " + factorial;
+    }
+  </script>
+</head>
+<body>
+  <label for="numberInput">Enter a number:</label>
+  <input type="number" id="numberInput">
+  <button onclick="calculateFactorial()">Calculate Factorial</button>
+
+  <div id="output"></div>
+</body>
+</html>
+4.
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Sum and Average</title>
+  <script>
+    function calculateSumAndAverage() {
+      var numbers = [];
+      var input = 0;
+
+      while (input !== 0) {
+        input = parseInt(prompt("Enter a positive number (enter 0 to finish):"));
+        if (input > 0) {
+          numbers.push(input);
+        }
+      }
+
+      var sum = 0;
+      for (var i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+      }
+
+      var average = sum / numbers.length;
+
+      document.getElementById("output").innerHTML = "Sum: " + sum + "<br>Average: " + average;
+    }
+  </script>
+</head>
+<body>
+  <button onclick="calculateSumAndAverage()">Enter Numbers</button>
+
+  <div id="output"></div>
+</body>
+</html>
