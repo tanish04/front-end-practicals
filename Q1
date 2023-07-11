@@ -1,0 +1,119 @@
+Q1
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Text Formatting Example</title>
+  <style>
+    /* Custom styles */
+    .red {
+      color: red;
+    }
+
+    .blue {
+      color: blue;
+    }
+
+    .green {
+      color: green;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
+
+    .heading {
+      font-size: 24px;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .font {
+      font-family: Arial, sans-serif;
+    }
+
+    .font-width {
+      letter-spacing: 2px;
+    }
+
+    .background {
+      background-color: #f1f1f1;
+    }
+
+    .line-break {
+      white-space: pre-line;
+    }
+
+    .horizontal-line {
+      border-top: 1px solid black;
+    }
+
+    .blinking {
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0% { visibility: hidden; }
+      50% { visibility: visible; }
+    }
+
+    .marquee {
+      animation: marquee 10s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">Text Formatting Example</h1>
+
+  <h2>Font Styles</h2>
+  <p>This is <span class="bold">bold</span> text.</p>
+  <p>This is <span class="italic">italic</span> text.</p>
+  <p>This is <span class="underline">underlined</span> text.</p>
+
+  <h2>Colors</h2>
+  <p class="red">This text is red.</p>
+  <p class="blue">This text is blue.</p>
+  <p class="green">This text is green.</p>
+
+  <h2>Headings</h2>
+  <h1 class="heading">Heading 1</h1>
+  <h2 class="heading">Heading 2</h2>
+  <h3 class="heading">Heading 3</h3>
+
+  <h2>Font and Font Width</h2>
+  <p class="font">This text uses the Arial font family.</p>
+  <p class="font-width">This text has increased font width.</p>
+
+  <h2>Background</h2>
+  <p class="background">This paragraph has a background color.</p>
+
+  <h2>Paragraph</h2>
+  <p>This is a normal paragraph.</p>
+  <p class="line-break">This paragraph has a line break<br>in the middle.</p>
+
+  <h2>Horizontal Line</h2>
+  <hr class="horizontal-line">
+
+  <h2>Blinking Text</h2>
+  <p><span class="blinking">This text is blinking.</span></p>
+
+  <h2>Marquee Text</h2>
+  <div class="marquee">
+    <p>This text is scrolling in a marquee.</p>
+  </div>
+</body>
+</html>
