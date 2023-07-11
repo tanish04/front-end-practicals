@@ -1,0 +1,48 @@
+Q4
+
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>College Website</title>
+</head>
+<frameset rows="100px, *">
+  <frame src="header.html" name="header" noresize>
+  <frameset cols="200px, *">
+    <frame src="links.html" name="links" noresize>
+    <frame src="content.html" name="content" noresize>
+  </frameset>
+</frameset>
+</html>
+...............................................                                                         <!DOCTYPE html>
+<html>
+<head>
+  <title>Header</title>
+</head>
+<body>
+  <h1>College Name</h1>
+  <img src="college_logo.png" alt="College Logo">
+</body>
+</html>                                                                  ...............................................                                                       <!DOCTYPE html>
+<html>
+<head>
+  <title>Links</title>
+</head>
+<body>
+  <ul>
+    <li><a href="faculty.html" target="content">Faculty</a></li>
+    <li><a href="courses.html" target="content">Courses</a></li>
+    <li><a href="activities.html" target="content">Student Activities</a></li>
+    <!-- Add more links here -->
+  </ul>
+</body>
+</html>
+[00:45, 12/07/2023] यादव🕊️: <!DOCTYPE html>
+<html>
+<head>
+  <title>Content</title>
+</head>
+<body>
+  <h2>Content</h2>
+  <p>Welcome to the College Website! Select a link from the left to view the corresponding content.</p>
+</body>
+</html>
